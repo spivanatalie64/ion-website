@@ -1,7 +1,7 @@
 # Documentation
 
 ## Project Overview
-Cyanogenmod Reborn is a modern, open-source Android ROM with a unique mascot (Ion), privacy features, and open source alternatives to Google services.
+Ion is a modern, open-source Android ROM with a unique mascot (Ion), privacy features, and open source alternatives to Google services.
 
 ## Setup
 - Repo structure

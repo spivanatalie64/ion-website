@@ -1,4 +1,4 @@
-# Cyanogenmod Reborn: Feature Plan
+# Ion: Feature Plan
 
 ## Modern Features
 - Advanced customization (themes, icons, status bar, lock screen)
