@@ -1,5 +1,78 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="UTF-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n  <title>Ion - The Open Android ROM</title>\n  <link rel="stylesheet" href="styles.css">\n</head>\n<body>\n  <header>
-    <div class="container">\n    <h1>Ion</h1>
-      <p class="tagline">The modern, open-source Android ROM</p>
-      <nav class="main-nav"><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="devices.html">Devices</a> | <a href="downloads.html">Downloads</a> | <a href="blog.html">Blog</a> | <a href="contact.html">Contact</a></nav>\n\n      <a href="downloads.html" class="button">Download</a>\n    </div>
-  </header>\n  <main>\n    <section>\n      <h2>Meet Ion</h2>\n      <p>Ion is a next-generation Android ROM, focused on privacy, customization, and open source freedom. Featuring the Ion mascot: a purple robot with a headband!</p>\n    </section>\n    <section>\n      <h2>Features</h2>\n      <ul>\n        <li>Advanced customization (themes, icons, status bar, lock screen)</li>\n        <li>Privacy Guard (fine-grained app permissions)</li>\n        <li>Performance enhancements</li>\n        <li>Open source alternatives to Google services</li>\n        <li>Frequent OTA updates</li>\n        <li>Minimal bloatware</li>\n      </ul>\n    </section>\n    <section id="download">\n      <h2>Download</h2>\n      <p>Coming soon! Stay tuned for the first public release of Ion.</p>\n    </section>\n    <section>\n      <h2>Get Involved</h2>\n      <p>Ion is built by the community, for the community. <a href="../DOCUMENTATION.md" style="color:#a259e6;">Read the docs</a> or <a href="mailto:contact@ionrom.org" style="color:#a259e6;">contact us</a> to contribute!</p>\n    </section>\n  </main>\n  <footer>\n    &copy; 2026 Ion Project. All rights reserved.\n  </footer>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ION_OS // SYSTEM_ROOT</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="system-wrapper">
+    <header class="sys-header">
+      <div class="sys-status">
+        <span class="status-indicator online"></span>
+        <span class="status-text">SYS_STATUS: ONLINE // NODE: PRIMARY</span>
+      </div>
+      <div class="sys-title">
+        <h1>[ION_ROM_PROJECT]</h1>
+        <p class="tagline">> The modern, open-source Android OS layer.</p>
+      </div>
+      <nav class="sys-nav">
+        <a href="index.html" class="active">[HOME]</a>
+        <a href="about.html">[ABOUT]</a>
+        <a href="devices.html">[DEVICES]</a>
+        <a href="downloads.html">[DOWNLOADS]</a>
+        <a href="blog.html">[LOGS]</a>
+        <a href="contact.html">[COMM]</a>
+      </nav>
+    </header>
+
+    <main class="dashboard">
+      <section class="panel hero-panel">
+        <div class="panel-header">>>> INIT_SEQUENCE</div>
+        <div class="panel-body">
+          <p class="terminal-text">Welcome to the Ion Project. A next-generation Android ROM focused on absolute privacy, deep-level customization, and open-source freedom.</p>
+          <div class="sys-block">
+            <span class="label">MASCOT_ID:</span>
+            <span class="value">PURPLE_ROBOT_v1.0 (HEADBAND_EQUIPPED)</span>
+          </div>
+          <a href="downloads.html" class="sys-button">EXECUTE_DOWNLOAD</a>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">>>> CORE_MODULES</div>
+        <div class="panel-body">
+          <ul class="feature-list">
+            <li><span class="highlight">MOD_UI:</span> Advanced customization (themes, status bar, kernel tweaks)</li>
+            <li><span class="highlight">PRIV_GUARD:</span> Strict fine-grained app permission matrix</li>
+            <li><span class="highlight">PERF_TUNE:</span> Low-latency performance enhancements</li>
+            <li><span class="highlight">MICRO_G:</span> Open-source alternative services layer</li>
+            <li><span class="highlight">OTA_DAEMON:</span> Frequent seamless over-the-air updates</li>
+            <li><span class="highlight">BLOAT_RM:</span> Zero bloatware architecture</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">>>> NETWORK_NODES</div>
+        <div class="panel-body">
+          <p style="margin-top: 0;">Ion is sustained by a decentralized network of community contributors.</p>
+          <div style="margin-top: 1.5rem;">
+            <a href="../DOCUMENTATION.md" class="sys-link">READ_MANUAL</a>
+            <a href="mailto:contact@ionrom.org" class="sys-link">OPEN_CHANNEL</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="sys-footer">
+      <div class="footer-meta">
+        <span>ARCH_VER: 6.x-ion</span>
+        <span>UPTIME: 99.9%</span>
+      </div>
+      <div>&copy; 2026 ION_PROJECT. EOT.</div>
+    </footer>
+  </div>
+</body>
+</html>

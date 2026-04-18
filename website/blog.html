@@ -3,26 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog — Ion</title>
+  <title>ION_OS // SYSTEM_LOGS</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Ion</h1>
-      <p class="tagline">The modern, open-source Android ROM</p>
-      <nav class="main-nav"><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="devices.html">Devices</a> | <a href="downloads.html">Downloads</a> | <a href="blog.html">Blog</a> | <a href="contact.html">Contact</a></nav>
-      <a href="downloads.html" class="button">Download</a>
-    </div>
-  </header>
-  <main class="container">
-    <section class="card">
-      <h2>Blog</h2>
-      <p>No posts yet — stay tuned!</p>
-    </section>
-  </main>
-  <footer>
-    <div class="container">&copy; 2026 Ion Project. All rights reserved.</div>
-  </footer>
+  <div class="system-wrapper">
+    <header class="sys-header">
+      <div class="sys-status">
+        <span class="status-indicator online"></span>
+        <span class="status-text">SYS_STATUS: ONLINE // NODE: LOGS</span>
+      </div>
+      <div class="sys-title">
+        <h1>[ION_ROM_PROJECT]</h1>
+        <p class="tagline">> The modern, open-source Android OS layer.</p>
+      </div>
+      <nav class="sys-nav">
+        <a href="index.html">[HOME]</a>
+        <a href="about.html">[ABOUT]</a>
+        <a href="devices.html">[DEVICES]</a>
+        <a href="downloads.html">[DOWNLOADS]</a>
+        <a href="blog.html" class="active">[LOGS]</a>
+        <a href="contact.html">[COMM]</a>
+      </nav>
+    </header>
+
+    <main class="dashboard">
+      <section class="panel full-width">
+        <div class="panel-header">>>> DEVELOPER_LOGS</div>
+        <div class="panel-body">
+          <p class="terminal-text">No transmission logs recorded yet.</p>
+          <div class="sys-block">
+            <div><span class="label">LOG_COUNT:</span> <span class="value">0</span></div>
+            <div style="margin-top: 0.5rem;"><span class="label">STATUS:</span> <span class="value">WAITING_FOR_INPUT</span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="sys-footer">
+      <div class="footer-meta">
+        <span>ARCH_VER: 6.x-ion</span>
+        <span>UPTIME: 99.9%</span>
+      </div>
+      <div>&copy; 2026 ION_PROJECT. EOT.</div>
+    </footer>
+  </div>
 </body>
 </html>
