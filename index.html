@@ -32,6 +32,36 @@
         <div class="panel-header">>>> INIT_SEQUENCE</div>
         <div class="panel-body">
           <p class="terminal-text">Welcome to the Ion Project. A next-generation Android ROM focused on absolute privacy, deep-level customization, and open-source freedom.</p>
+          <div class="mascot-container">
+            <svg class="mascot-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="robo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#a259e6" />
+                  <stop offset="100%" stop-color="#6c3eb6" />
+                </linearGradient>
+                <linearGradient id="headband-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#00ffcc" />
+                  <stop offset="100%" stop-color="#00b38f" />
+                </linearGradient>
+              </defs>
+              <!-- Head -->
+              <rect x="25" y="25" width="50" height="40" rx="8" fill="url(#robo-grad)" />
+              <!-- Headband -->
+              <rect x="23" y="32" width="54" height="8" rx="2" fill="url(#headband-grad)" />
+              <!-- Headband tie details -->
+              <path d="M 77 34 L 85 40 L 77 38 Z" fill="url(#headband-grad)" />
+              <path d="M 77 36 L 88 32 L 77 38 Z" fill="url(#headband-grad)" />
+              <!-- Eyes -->
+              <circle cx="40" cy="50" r="4" fill="#050508" />
+              <circle cx="60" cy="50" r="4" fill="#050508" />
+              <!-- Eye Glow -->
+              <circle cx="40" cy="50" r="2" fill="#00ffcc" />
+              <circle cx="60" cy="50" r="2" fill="#00ffcc" />
+              <!-- Antenna -->
+              <rect x="48" y="10" width="4" height="15" fill="#a259e6" />
+              <circle cx="50" cy="8" r="4" fill="#00ffcc" />
+            </svg>
+          </div>
           <div class="sys-block">
             <span class="label">MASCOT_ID:</span>
             <span class="value">PURPLE_ROBOT_v1.0 (HEADBAND_EQUIPPED)</span>
