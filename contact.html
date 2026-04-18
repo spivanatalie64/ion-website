@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Ion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Ion</h1>
+      <p class="tagline">The modern, open-source Android ROM</p>
+      <nav class="main-nav"><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="devices.html">Devices</a> | <a href="downloads.html">Downloads</a> | <a href="blog.html">Blog</a> | <a href="contact.html">Contact</a></nav>
+      <a href="downloads.html" class="button">Download</a>
+    </div>
+  </header>
+  <main class="container">
+    <section class="card">
+      <h2>Contact</h2>
+      <p>You can reach the Ion project at <a href="mailto:contact@ionrom.org" style="color:var(--accent)">contact@ionrom.org</a>.</p>
+      <form id="contactForm">
+        <label>
+          Subject<br>
+          <input type="text" id="subject" style="width:100%;padding:0.5rem;margin-top:0.25rem;border-radius:6px;border:0;">
+        </label>
+        <label style="display:block;margin-top:0.75rem">
+          Message<br>
+          <textarea id="message" rows="6" style="width:100%;padding:0.5rem;margin-top:0.25rem;border-radius:6px;border:0;"></textarea>
+        </label>
+        <button type="submit" class="button" style="margin-top:0.75rem">Send</button>
+      </form>
+      <p style="margin-top:0.5rem;color:var(--muted);font-size:0.9rem">This form opens your mail client. For automated responses, set up an issue on the repository.</p>
+    </section>
+  </main>
+  <footer>
+    <div class="container">&copy; 2026 Ion Project. All rights reserved.</div>
+  </footer>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      var subj = document.getElementById('subject').value || 'Contact from website';
+      var body = document.getElementById('message').value || '';
+      window.location.href = 'mailto:contact@ionrom.org?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+    });
+  </script>
+</body>
+</html>
