@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ION_OS // DOC_NODE</title>
+  <title>ION_OS // TECHNICAL_MANUAL</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -30,29 +30,54 @@
 
     <main class="dashboard">
       <section class="panel full-width">
-        <div class="panel-header">>>> SYSTEM_DOCUMENTATION_V1.0</div>
+        <div class="panel-header">>>> SYSTEM_MANUAL_v1.0.42_STABLE</div>
         <div class="panel-body">
+          <p class="terminal-text">This document contains the core operational protocols for the Ion OS ecosystem. Reference these modules for system initialization, security hardening, and development lifecycle management.</p>
+          
           <div class="sys-block">
-            <span class="label">MODULE:</span> <span class="value">PROJECT_OVERVIEW</span>
-            <p>Ion is a next-generation Android distribution engineered for absolute privacy and kernel-level customization. It operates as a sovereign OS layer, bypassing traditional telemetry vectors.</p>
-          </div>
-
-          <div class="sys-block">
-            <span class="label">MODULE:</span> <span class="value">PROVISIONING_PROCEDURE</span>
-            <ul class="feature-list" style="margin-top: 1rem;">
-              <li><span class="highlight">INIT:</span> Clone the core repository hierarchy.</li>
-              <li><span class="highlight">BUILD:</span> Execute the automated compilation pipeline.</li>
-              <li><span class="highlight">DEPLOY:</span> Interface with the target device bootloader.</li>
+            <span class="label">SEC_01 //</span> <span class="value">CORE_ARCHITECTURE</span>
+            <p style="margin-top: 0.5rem;">Ion is built upon a hardened Android 14+ base, stripped of proprietary telemetry and reconstructed with a focus on modularity.</p>
+            <ul class="feature-list">
+              <li><span class="highlight">KERNEL_LAYER:</span> Optimized for low-latency hardware interaction and CPU/GPU frequency scaling.</li>
+              <li><span class="highlight">HAL_INTERFACE:</span> Custom hardware abstraction layers for extended device support.</li>
+              <li><span class="highlight">UI_FRAMEWORK:</span> The Ion Theming Engine allows for runtime injection of system-wide styles and icon matrices.</li>
             </ul>
           </div>
 
           <div class="sys-block">
-            <span class="label">MODULE:</span> <span class="value">CONTRIBUTION_PROTOCOL</span>
-            <p>Collaborators must adhere to the fork-branch-PR workflow. Source integrity is maintained via strict coding standards and automated linting sequences.</p>
-            <div style="margin-top: 1rem;">
-              <a href="https://github.com/spivanatalie64/ion-website" class="sys-link">GITHUB_REPO</a>
-              <a href="contact.html" class="sys-link">OPEN_COMM_LINK</a>
+            <span class="label">SEC_02 //</span> <span class="value">SECURITY_HARDENING</span>
+            <p style="margin-top: 0.5rem;">Privacy is not an add-on; it is the default execution state of the Ion kernel.</p>
+            <ul class="feature-list">
+              <li><span class="highlight">PRIV_GUARD_2.0:</span> Granular control over application access to sensors, storage, and identity tokens.</li>
+              <li><span class="highlight">NETWORK_ISOLATION:</span> Built-in OpenVPN support and per-app network kill switches.</li>
+              <li><span class="highlight">SOVEREIGN_AUTH:</span> Unlockable bootloader and native root access management for authorized administrators.</li>
+            </ul>
+          </div>
+
+          <div class="sys-block">
+            <span class="label">SEC_03 //</span> <span class="value">PROVISIONING_DAEMON</span>
+            <p style="margin-top: 0.5rem;">To deploy Ion to a supported hardware target, follow the binary flashing sequence:</p>
+            <div style="background: #000; padding: 1rem; border: 1px solid var(--bg-panel-border); font-family: 'Courier New', monospace; color: var(--accent-secondary); margin: 1rem 0;">
+              # fastboot flash boot boot.img<br>
+              # fastboot flash recovery recovery.img<br>
+              # fastboot update ion_release_payload.zip
             </div>
+            <p>Ensure target device IDs are validated against the official hardware manifest in the <a href="devices.html" class="sys-link">DEVICES_NODE</a>.</p>
+          </div>
+
+          <div class="sys-block">
+            <span class="label">SEC_04 //</span> <span class="value">CONTRIBUTION_LIFECYCLE</span>
+            <p style="margin-top: 0.5rem;">The Ion Project is sustained by decentralized collaboration. Review the submission matrix below:</p>
+            <ul class="feature-list">
+              <li><span class="highlight">CODE_STYLE:</span> Adhere to strict AOSP formatting with Ion-specific kernel extensions.</li>
+              <li><span class="highlight">PR_WORKFLOW:</span> All branches must pass the CI/CD linting daemon before review.</li>
+              <li><span class="highlight">ASSET_GEN:</span> UI assets must follow the purple/teal neon-vibrant design specs.</li>
+            </ul>
+          </div>
+
+          <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+            <a href="https://github.com/spivanatalie64/ion-website" class="sys-button">SOURCE_REPOSITORY</a>
+            <a href="downloads.html" class="sys-button">RELEASE_ARCHIVE</a>
           </div>
         </div>
       </section>
